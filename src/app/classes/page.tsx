@@ -1,28 +1,12 @@
 "use client";
 
-import {
-  Card,
-  Image,
-  Text,
-  Grid,
-  Group,
-  Badge,
-  Button,
-  ActionIcon,
-  Title,
-  Anchor,
-} from "@mantine/core";
+import { Text, Grid, Anchor } from "@mantine/core";
 
 import { classesdata } from "@/data/classesData";
 import ClassCard from "@/components/ClassCard";
-import { HeaderSimple } from "@/components/HeaderSimple";
-// import { Container, Grid } from "@mantine/core";
-//   const { image, title, year, term, description, badges } = classesdata[0];
 export default function Classes() {
-  //   return <ClassCard />;
   return (
     <>
-      <HeaderSimple />
       <Text px="7rem" pt="1rem" ta="center" c="dimmed">
         As a part of{" "}
         <Anchor

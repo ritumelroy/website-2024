@@ -57,7 +57,7 @@ $mantine-breakpoint-xl: "88em";
 }
 
 .highlight {
-  position: relative;
+  // position: relative;
   background-color: var(--mantine-color-blue-light);
   border-radius: var(--mantine-radius-sm);
   padding: 0.25rem 0.75rem;
@@ -69,6 +69,8 @@ $mantine-breakpoint-xl: "88em";
   border: 1px solid;
   border-color: #dee2e6;
   border-radius: 1rem;
+  // opac
+  // background-color: red;
 }
 
 .skills-outer {
@@ -80,6 +82,15 @@ $mantine-breakpoint-xl: "88em";
     max-width: 100%;
     // max-height: 6rem;
   }
+}
+
+.skills-icon {
+  height: 3rem;
+  width: 3rem;
+}
+.skills-icon-inner {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .img-center {

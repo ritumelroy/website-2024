@@ -32,7 +32,7 @@ import { HeaderSimple } from "@/components/HeaderSimple";
 
 export const metadata = {
   title: "Ritu Melroy",
-  description: "I have followed setup instructions carefully",
+  description: "Personal Webpage",
 };
 
 export default function RootLayout({
@@ -46,8 +46,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        {/* <HeaderSimple /> */}
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <HeaderSimple />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

@@ -1,8 +1,17 @@
 "use client";
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { Container, Group, Burger, Button, Stack, Text } from "@mantine/core";
+import {
+  Container,
+  Group,
+  Burger,
+  Button,
+  Stack,
+  Text,
+  Overlay,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import ToggleThemeButton from "./ToggleThemeButton";
 // import { MantineLogo } from '@mantinex/mantine-logo';
 // import classes from "./HeaderSimple.module.css";
 
@@ -15,7 +24,7 @@ export function HeaderSimple() {
     <header className="header ">
       <Container size="md" className="innerw">
         {/* <MantineLogo size={28} /> */}
-        <div>Logo? Ritu Melroy</div>
+        <div>Ritu Melroy</div>
         <Group gap={5} visibleFrom="xs">
           <Button
             variant="default"
@@ -41,9 +50,15 @@ export function HeaderSimple() {
           >
             Projects
           </Button>
-          <Button variant="default" className="border-n">
+          <Button
+            variant="default"
+            className="border-n"
+            component={Link}
+            href="/about"
+          >
             About
           </Button>
+          <ToggleThemeButton />
         </Group>
 
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
@@ -60,12 +75,44 @@ export function HeaderSimple() {
             py="xs"
             className="test-stack"
           >
-            <Button fullWidth variant="default">
-              hi
+            {/* <Overlay> */}
+            <Button
+              fullWidth
+              variant="filled"
+              color="#495057"
+              component={Link}
+              href="/"
+            >
+              Home
             </Button>
-            <Button fullWidth variant="default">
-              hi
+            <Button
+              fullWidth
+              variant="filled"
+              color="#495057"
+              component={Link}
+              href="/classes"
+            >
+              Classes
             </Button>
+            <Button
+              fullWidth
+              variant="filled"
+              color="#495057"
+              component={Link}
+              href="/projects"
+            >
+              Projects
+            </Button>
+            <Button
+              fullWidth
+              variant="filled"
+              color="#495057"
+              component={Link}
+              href="/about"
+            >
+              About
+            </Button>
+            {/* </Overlay> */}
           </Stack>
         </Container>
       ) : (

@@ -11,10 +11,16 @@ import {
   Box,
   Flex,
   Card,
+  ActionIcon,
 } from "@mantine/core";
 
 // import { getGradient, useMantineTheme } from "@mantine/core";
-
+import {
+  GitHubLogoIcon,
+  OpenInNewWindowIcon,
+  LinkedInLogoIcon,
+  HeartFilledIcon,
+} from "@radix-ui/react-icons";
 export function HeroBullets() {
   // const theme = useMantineTheme();
 
@@ -39,11 +45,28 @@ export function HeroBullets() {
           </Text>
 
           <Group mt={30}>
-            <Button radius="xl" size="md" className="control">
-              Get started
+            <Button
+              radius="xl"
+              size="md"
+              className="control"
+              component="a"
+              href="https://github.com/ritumelroy"
+              target="_blank"
+            >
+              <Text pr="sm">Github</Text>
+              <GitHubLogoIcon />
             </Button>
-            <Button variant="default" radius="xl" size="md" className="control">
-              Source code
+            <Button
+              variant="default"
+              radius="xl"
+              size="md"
+              className="control"
+              component="a"
+              href="https://www.linkedin.com/in/ritu-melroy-b152b51b0/"
+              target="_blank"
+            >
+              <Text pr="sm">LinkedIn</Text>
+              <LinkedInLogoIcon />
             </Button>
           </Group>
         </div>
@@ -61,9 +84,20 @@ export function HeroBullets() {
         // className="border"
       >
         <Card withBorder radius="md" className="skills-outer">
-          <div className="img-center">
+          {/* <div className="img-center">
             <Image alt="code" src="code.svg" className="skills-imgs " />
-          </div>
+          </div> */}
+          <ActionIcon
+            variant="default"
+            className="skills-icon"
+            ml="40%"
+            mb="md"
+            onClick={(event: { preventDefault: () => any }) =>
+              event.preventDefault()
+            }
+          >
+            <HeartFilledIcon className="skills-icon-inner" />
+          </ActionIcon>
 
           <Text c="dimmed">
             Experience in: Python, Javascript, Typescript, C, C++, HTML, CSS,
@@ -71,9 +105,20 @@ export function HeroBullets() {
           </Text>
         </Card>
         <Card withBorder radius="md" className="skills-outer">
-          <div className="img-center">
+          {/* <div className="img-center">
             <Image alt="art" src="art.svg" className="skills-imgs" />
-          </div>
+          </div> */}
+          <ActionIcon
+            variant="default"
+            className="skills-icon"
+            ml="40%"
+            mb="md"
+            onClick={(event: { preventDefault: () => any }) =>
+              event.preventDefault()
+            }
+          >
+            <HeartFilledIcon className="skills-icon-inner" />
+          </ActionIcon>
 
           <Text c="dimmed">
             I enjoy art, specifically illustration, photography and animation
@@ -81,9 +126,20 @@ export function HeroBullets() {
           </Text>
         </Card>
         <Card withBorder radius="md" className="skills-outer">
-          <div className="img-center">
+          {/* <div className="img-center">
             <Image alt="writing" src="write.svg" className="skills-imgs " />
-          </div>
+          </div> */}
+          <ActionIcon
+            variant="default"
+            className="skills-icon"
+            ml="40%"
+            mb="md"
+            onClick={(event: { preventDefault: () => any }) =>
+              event.preventDefault()
+            }
+          >
+            <HeartFilledIcon className="skills-icon-inner" />
+          </ActionIcon>
 
           <Text c="dimmed">
             I love to read and write. These days, however, I do more reading

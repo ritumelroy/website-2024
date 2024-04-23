@@ -6,7 +6,7 @@ import { Title } from "@mantine/core";
 export default function Projects() {
   return (
     <>
-      <HeaderSimple />
+      {/* <HeaderSimple /> */}
       <Projects2024 />
       <PastProjects />
     </>
