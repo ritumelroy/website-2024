@@ -52,3 +52,9 @@
   line-height: 1;
   max-width: 7rem;
 }
+
+.hide-mobile {
+  @media (max-width: $mantine-breakpoint-sm) {
+    display: none;
+  }
+}

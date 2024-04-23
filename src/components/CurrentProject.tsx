@@ -8,7 +8,7 @@ export default function CurrentProject() {
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
-      mt="md"
+      mt="xl"
       ml={{ base: "xs", md: "" }}
       gap={{ base: "xs", md: "sm" }}
     >
