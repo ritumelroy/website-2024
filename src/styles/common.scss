@@ -1,0 +1,24 @@
+// $mantine-breakpoint-xs: "36em";
+// $mantine-breakpoint-sm: "48em";
+// $mantine-breakpoint-md: "62em";
+// $mantine-breakpoint-lg: "75em";
+// $mantine-breakpoint-xl: "88em";
+
+.w-100 {
+  width: 100%;
+}
+
+.test {
+  overflow: auto;
+}
+
+.border {
+  border: 1px solid black;
+  text-align: center;
+}
+
+html,
+body {
+  // border: 1px solid black;
+  height: 100%;
+}
