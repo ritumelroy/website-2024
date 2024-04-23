@@ -33,12 +33,12 @@ export default function Classes() {
         </Anchor>{" "}
         at UNSW Sydney.
       </Text>
-      <Text px="7rem" pt="1rem" ta="center" c="dimmed">
+      <Text px={{ base: "1rem", md: "7rem" }} pt="1rem" ta="center" c="dimmed">
         Expected to graduate on December 2024.
       </Text>
-      <Grid px="7rem" py="2rem">
+      <Grid px={{ base: "1rem", md: "7rem" }} py="2rem">
         {classesdata.map((data, k) => (
-          <Grid.Col key={k} span={4}>
+          <Grid.Col key={k} span={{ base: 12, md: 4 }}>
             {/* <Title>{data.term}</Title> */}
             <ClassCard
               status={data.status}

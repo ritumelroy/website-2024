@@ -1,0 +1,54 @@
+.stat-card {
+  background-color: var(--mantine-color-body);
+  .stat-inner {
+    display: flex;
+    padding-top: 0.5rem;
+    @media (max-width: $mantine-breakpoint-xs) {
+      flex-direction: column;
+    }
+  }
+}
+
+.label {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lead {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.ring {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    justify-content: center;
+    margin-top: var(--mantine-spacing-md);
+  }
+}
+
+.proj-2024-card {
+  background-color: var(--mantine-color-body);
+  width: 20rem;
+}
+
+.proj-2024-footer {
+  display: flex;
+  justify-content: space-between;
+  //   align-items: baseline;
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-lg);
+  border-top: 0.1rem solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
+.proj-2024-title {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  line-height: 1;
+  max-width: 7rem;
+}

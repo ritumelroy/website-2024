@@ -9,7 +9,6 @@ import {
   Button,
   ActionIcon,
 } from "@mantine/core";
-// import { classesdata } from "@/data/classesData";
 import { ClassCardProps } from "@/models/card";
 import { Key } from "react";
 
@@ -21,7 +20,6 @@ export default function ClassCard({
   description,
   badges,
 }: ClassCardProps) {
-  //   const { image, title, year, term, description, badges } = classesdata[0];
   const features = badges.map(
     (badge: { label: Key | null | undefined; emoji: any }) => (
       <Badge variant="light" key={badge.label} leftSection={badge.emoji}>
@@ -29,21 +27,10 @@ export default function ClassCard({
       </Badge>
     )
   );
-  //   console.log(image, title, year, term, description, badges);
 
   return (
     <Card withBorder radius="md" p="md" className="card">
-      {/* <Card.Section>
-        <Image
-          src={image}
-          alt={title}
-          height={180}
-          className="class-img"
-          py="md"
-        />
-      </Card.Section> */}
-
-      <Card.Section className="section" mt="md" h="17rem">
+      <Card.Section className="section" mt="md" h={{ base: "", md: "17rem" }}>
         <Text fz="lg" fw={500} pb="sm">
           {title}
         </Text>

@@ -33,7 +33,12 @@ export function HeaderSimple() {
           >
             Classes
           </Button>
-          <Button variant="default" className="border-n">
+          <Button
+            variant="default"
+            className="border-n"
+            component={Link}
+            href="/projects"
+          >
             Projects
           </Button>
           <Button variant="default" className="border-n">
