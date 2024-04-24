@@ -135,6 +135,8 @@ export const classesdata = [
     description:
       "Final capstone project where we worked in teams of 6 students working towards a project given by a client. Our team worked to implement a restraunt management web application. I worked on the frontend team mainly and made the pages for kitchen and wait staff.",
     badges: [
+      { emoji: "🐳", label: "Docker" },
+      { emoji: "📊", label: "Jira" },
       { emoji: "👩‍💻", label: "Typescript" },
       { emoji: "👩‍💻", label: "React" },
       { emoji: "👩‍💻", label: "NextJS" },

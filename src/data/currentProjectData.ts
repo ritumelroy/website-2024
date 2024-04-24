@@ -7,7 +7,7 @@ export const currProjects = [
     percentage: 100,
     deadline: "",
     github: "https://github.com/ritumelroy/quizApp",
-    website: "defg",
+    website: "https://ritumelroy.github.io/quizApp",
     badges: ["React"],
   },
   {
@@ -17,7 +17,7 @@ export const currProjects = [
     status: "in-progress",
     percentage: 65,
     deadline: "27th April 2024",
-    github: "https://github.com/ritumelroy/quizApp",
+    github: "https://github.com/ritumelroy/in-browser-markdown",
     website: "",
     badges: ["React", "Tailwind CSS"],
   },

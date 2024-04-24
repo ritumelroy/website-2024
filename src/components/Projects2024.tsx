@@ -24,7 +24,8 @@ export default function Projects2024() {
           <Text>
             Although I aim for monthly goals, my schedule as a full-time Masters
             student varies, limiting me to planning just two projects at a time.
-            Excited to showcase my programming prowess!
+            Excited to showcase my programming progress as well as my ability
+            and willingness to learn new technologies/frameworks!
           </Text>
         </Box>
       </Flex>
