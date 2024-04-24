@@ -9,6 +9,7 @@ import {
   Stack,
   Text,
   Overlay,
+  Flex,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import ToggleThemeButton from "./ToggleThemeButton";
@@ -23,97 +24,108 @@ export function HeaderSimple() {
   return (
     <header className="header ">
       <Container size="md" className="innerw">
-        {/* <MantineLogo size={28} /> */}
         <div>Ritu Melroy</div>
-        <Group gap={5} visibleFrom="xs">
-          <Button
-            variant="default"
-            className="border-n"
-            component={Link}
-            href="/"
-          >
-            Home
-          </Button>
-          <Button
-            variant="default"
-            className="border-n"
-            component={Link}
-            href="/classes"
-          >
-            Classes
-          </Button>
-          <Button
-            variant="default"
-            className="border-n"
-            component={Link}
-            href="/projects"
-          >
-            Projects
-          </Button>
-          <Button
-            variant="default"
-            className="border-n"
-            component={Link}
-            href="/about"
-          >
-            About
-          </Button>
-          <ToggleThemeButton />
-        </Group>
+        <Flex>
+          <Flex>
+            <Group gap={5} visibleFrom="xs">
+              <Button
+                variant="default"
+                className="border-n"
+                component={Link}
+                href="/"
+              >
+                Home
+              </Button>
+              <Button
+                variant="default"
+                className="border-n"
+                component={Link}
+                href="/classes"
+              >
+                Classes
+              </Button>
+              <Button
+                variant="default"
+                className="border-n"
+                component={Link}
+                href="/projects"
+              >
+                Projects
+              </Button>
+              <Button
+                variant="default"
+                className="border-n"
+                component={Link}
+                href="/about"
+              >
+                About
+              </Button>
+            </Group>
+            <ToggleThemeButton />
+          </Flex>
 
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            hiddenFrom="xs"
+            size="sm"
+            ml="sm"
+          />
+        </Flex>
       </Container>
 
       {opened ? (
         <Container hiddenFrom="md">
-          <Stack
-            h={300}
-            bg="var(--mantine-color-body)"
-            align="stretch"
-            justify="flex-start"
-            gap="xs"
-            py="xs"
-            className="test-stack"
-          >
-            {/* <Overlay> */}
-            <Button
-              fullWidth
-              variant="filled"
-              color="#495057"
-              component={Link}
-              href="/"
+          <Overlay mt="3.3rem">
+            <Stack
+              h={200}
+              bg="var(--mantine-color-body)"
+              align="stretch"
+              justify="flex-start"
+              gap="xs"
+              py="xs"
+              className="test-stack"
             >
-              Home
-            </Button>
-            <Button
-              fullWidth
-              variant="filled"
-              color="#495057"
-              component={Link}
-              href="/classes"
-            >
-              Classes
-            </Button>
-            <Button
-              fullWidth
-              variant="filled"
-              color="#495057"
-              component={Link}
-              href="/projects"
-            >
-              Projects
-            </Button>
-            <Button
-              fullWidth
-              variant="filled"
-              color="#495057"
-              component={Link}
-              href="/about"
-            >
-              About
-            </Button>
-            {/* </Overlay> */}
-          </Stack>
+              {/* <Overlay> */}
+              <Button
+                fullWidth
+                variant="filled"
+                color="blue"
+                component={Link}
+                href="/"
+              >
+                Home
+              </Button>
+              <Button
+                fullWidth
+                variant="filled"
+                color="blue"
+                component={Link}
+                href="/classes"
+              >
+                Classes
+              </Button>
+              <Button
+                fullWidth
+                variant="filled"
+                color="blue"
+                component={Link}
+                href="/projects"
+              >
+                Projects
+              </Button>
+              <Button
+                fullWidth
+                variant="filled"
+                color="blue"
+                component={Link}
+                href="/about"
+              >
+                About
+              </Button>
+              {/* </Overlay> */}
+            </Stack>
+          </Overlay>
         </Container>
       ) : (
         <></>

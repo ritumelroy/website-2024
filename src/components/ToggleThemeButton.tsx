@@ -29,6 +29,8 @@ export default function ToggleThemeButton() {
   }, []);
   return (
     <ActionIcon
+      ml="sm"
+      size="lg"
       variant="outline"
       color={dark.current ? "yellow" : "blue"}
       onClick={() => toggleTheme()}
