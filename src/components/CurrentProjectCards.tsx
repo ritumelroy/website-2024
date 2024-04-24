@@ -80,7 +80,13 @@ export default function CurrentProjectCards({
           {website === "" ? (
             <></>
           ) : (
-            <Button variant="default" size="xs">
+            <Button
+              variant="default"
+              size="xs"
+              component="a"
+              target="_blank"
+              href={website}
+            >
               Live Webpage
               <OpenInNewWindowIcon />
             </Button>
