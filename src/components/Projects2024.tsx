@@ -1,12 +1,25 @@
-import { Box, Container, Flex, Text, Title } from "@mantine/core";
+import { Alert, Box, Container, Flex, Text, Title } from "@mantine/core";
 import ProjectStats from "./ProjectStats";
 import CurrentProjectCards from "./CurrentProjectCards";
 import CurrentProject from "./CurrentProject";
+import { UpdateIcon } from "@radix-ui/react-icons";
 
 export default function Projects2024() {
+  const updateTitle = (
+    <Text>
+      <UpdateIcon /> Update on May 7th 2024:{" "}
+    </Text>
+  );
+
   return (
     <Container size="md" pt="sm">
       <Title mb="sm">2024 Projects</Title>
+      <Alert variant="light" color="red" title={updateTitle} mb="md">
+        As my final exam for 2024 Term 1 is on May 9th, I will resume the
+        remaining projects after that day. Further, I will update the new
+        deadline dates after May 9th as currently I wish to focus on my exam
+        prep.
+      </Alert>
       <Flex direction={{ base: "column", md: "row" }} gap="md">
         <ProjectStats />
         <Box maw={{ base: "100%", md: "60%" }}>
