@@ -7,7 +7,7 @@ import { UpdateIcon } from "@radix-ui/react-icons";
 export default function Projects2024() {
   const updateTitle = (
     <Text>
-      <UpdateIcon /> Update on May 7th 2024:{" "}
+      <UpdateIcon /> Update on May 28th 2024:{" "}
     </Text>
   );
 
@@ -15,10 +15,11 @@ export default function Projects2024() {
     <Container size="md" pt="sm">
       <Title mb="sm">2024 Projects</Title>
       <Alert variant="light" color="red" title={updateTitle} mb="md">
-        As my final exam for 2024 Term 1 is on May 9th, I will resume the
-        remaining projects after that day. Further, I will update the new
-        deadline dates after May 9th as currently I wish to focus on my exam
-        prep.
+        Unfortunately, I got sick with a bad case of flu that lasted around 9
+        last days of my 14 day term break. I could barely leave my bed and
+        missed all my deadlines 😭. Term 2 already started by the time I was
+        recovering. So I hope to update the deadlines once I am back on track
+        with school work, job applications and Online Assesments😞
       </Alert>
       <Flex direction={{ base: "column", md: "row" }} gap="md">
         <ProjectStats />
