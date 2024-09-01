@@ -14,13 +14,13 @@ export default function Projects2024() {
   return (
     <Container size="md" pt="sm">
       <Title mb="sm">2024 Projects</Title>
-      <Alert variant="light" color="red" title={updateTitle} mb="md">
+      {/* <Alert variant="light" color="red" title={updateTitle} mb="md">
         Unfortunately, I got sick with a bad case of flu that lasted around 9
         last days of my 14 day term break. I could barely leave my bed and
         missed all my deadlines 😭. Term 2 already started by the time I was
         recovering. So I hope to update the deadlines once I am back on track
         with school work, job applications and Online Assesments😞
-      </Alert>
+      </Alert> */}
       <Flex direction={{ base: "column", md: "row" }} gap="md">
         <ProjectStats />
         <Box maw={{ base: "100%", md: "60%" }}>
